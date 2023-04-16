@@ -3,9 +3,14 @@ import { Component } from "react";
 const styles = {
     layout :{
         backgroundColor: '#fff',
-        display: 'flex',
         color: '#0A283E',
-        alignItems: 'center'
+        alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+    },
+
+    container: {
+        width: '1100px'
     }
 }
 
@@ -13,7 +18,7 @@ class Layout extends Component {
     render() {
         return (
             <div style={styles.layout}>
-                <div>
+                <div style={styles.container}>
                     {this.props.children}
                 </div>
             </div>
