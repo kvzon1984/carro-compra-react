@@ -20,7 +20,7 @@ class Producto extends Component {
         const { key, producto, agregarAlCarro} = this.props
 
         return(
-            <div style={styles.producto}>
+            <div style={styles.producto} key={producto.name}>
                 <img style={styles.img} alt={producto.nombre} src={producto.img}/>
                 <h3>{producto.name}</h3>
                 <p>{producto.price}</p>
